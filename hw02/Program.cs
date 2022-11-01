@@ -2,9 +2,19 @@
 //НЕЛЬЗЯ ИСПОЛЬЗОВАТЬ СТРОКИ.
 Console.WriteLine("Введите число");
 int x=Convert.ToInt32(Console.ReadLine());
-int num=0;
-int numA=0;
-if (x<=99)Console.WriteLine("нет третьего числа");
-else if (x<999) num=x%10 ;Console.WriteLine("третье число"+num);
+if(x<100)
+{
+    Console.WriteLine("Третьего числа нет");
+    }
+else
+{
+    while (x>1000)
+    {
+        x/=10;
+    }
 
-//else if (x<99999) numA=x/100%10 ;Console.WriteLine("третье число"+numA);
+int result =x%10;
+
+Console.WriteLine("Третья цифра"+result);}
+
+
